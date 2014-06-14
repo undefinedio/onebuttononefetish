@@ -129,4 +129,6 @@ button {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5em; }
