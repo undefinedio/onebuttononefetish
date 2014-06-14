@@ -12,7 +12,8 @@ gulp.task('sass', function () {
         .pipe(sass({
             //sourceComments: 'map'
         }))
-        .pipe(gulp.dest('/css/'))
+		.pipe(rename({ extname: '.css' }))
+        .pipe(gulp.dest('./css/'))
         .pipe(minifyCSS({
             keepSpecialComments: 0
         }))

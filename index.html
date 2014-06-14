@@ -1,11 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html ng-app="fetishApp" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>One Button One Fetish</title>
+	<link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"/>
+
 </head>
 <body>
+	<div class="wrapper" ng-controller="fetishCtrl">
+		<h1>One button, one fetish</h1>
+		<button ng-click="openFetish()" id="js-button">
+			<h2>PRESS HERE*</h2>
+			<span>* If you dare, pussy!</span>
+		</button>
 
+	</div>
+	<footer><p>Have any sick suggestions? Send a message here</p></footer>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

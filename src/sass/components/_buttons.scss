@@ -1,0 +1,48 @@
+button{
+
+	background: red;
+	border: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width:50%;
+	display: block;
+	color: #FFF;
+	margin: auto;
+	padding: 3em;
+	position: relative;
+	margin-top: 0;
+	@include transition(.1s);
+	&.active{
+		margin-top: .5em;
+		&:after{
+			bottom:0;
+		}
+		span{
+			bottom:-2.5em;
+		}
+	}
+	&:after{
+		@include transition(.1s);
+		display: block;
+		content: '';
+		position: absolute;
+		width:100%;
+		left:0;
+		bottom:-.5em;
+		height: 1em;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background: #800;
+		z-index: -1;
+	}
+	span{
+		@include transition(.1s);
+		width:100%;
+		text-align: center;
+		display: block;
+		position: absolute;
+		bottom:-3em;
+		color: #7a7a7a;
+		left:0;
+	}
+}

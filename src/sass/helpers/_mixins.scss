@@ -4,6 +4,14 @@
     border-radius: $radius;
 }
 
+@mixin transition($speed: 2s){
+	-webkit-transition: all $speed linear;
+	-moz-transition: all $speed linear;
+	-ms-transition: all $speed linear;
+	-o-transition: all $speed linear;
+	transition: all $speed linear;
+}
+
 @mixin placeholder($color: black, $text-transform : capitalize) {
     ::-webkit-input-placeholder {
         color: $color;
