@@ -1,0 +1,18 @@
+.logo{
+    display: block;
+    background: url("../img/logo.svg") no-repeat center center;
+    height: 9em;
+    width: 18em;
+    background-size: 100%;
+    margin: 10% auto 2em auto;
+
+    @include mq(ml){
+        height: 10em;
+        width: 25em;
+    }
+
+    @include mq(n){
+        height: 12em;
+        width: 30em;
+    }
+}

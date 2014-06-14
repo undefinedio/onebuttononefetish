@@ -1,5 +1,4 @@
 button{
-
 	background: red;
 	border: none;
 	-webkit-border-radius: 5px;
@@ -12,6 +11,11 @@ button{
 	position: relative;
 	margin-top: 0;
 	@include transition(.1s);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
 	&.active{
 		margin-top: .5em;
 		&:after{

@@ -83,6 +83,14 @@ h2 {
   max-width: 960px;
   margin: auto; }
 
+footer {
+  font-size: 75%;
+  color: #000; }
+  footer a {
+    color: red; }
+    footer a:hover {
+      color: #800; }
+
 button {
   background: red;
   border: none;
@@ -99,7 +107,10 @@ button {
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
-  transition: all 0.1s linear; }
+  transition: all 0.1s linear;
+  cursor: pointer; }
+  button:focus {
+    outline: none; }
   button.active {
     margin-top: 0.5em; }
     button.active:after {
@@ -143,3 +154,19 @@ footer {
   width: 100%;
   text-align: center;
   padding-bottom: 0.5em; }
+
+.logo {
+  display: block;
+  background: url("../img/logo.svg") no-repeat center center;
+  height: 9em;
+  width: 18em;
+  background-size: 100%;
+  margin: 10% auto 2em auto; }
+  @media screen and (min-width: 480px) {
+    .logo {
+      height: 10em;
+      width: 25em; } }
+  @media screen and (min-width: 643px) {
+    .logo {
+      height: 12em;
+      width: 30em; } }
