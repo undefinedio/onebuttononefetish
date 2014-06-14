@@ -74,5 +74,16 @@ var fetishes = [
 	{'name': 'Face sitting', 'url': 'http://www.humoron.com/porn/Hardcore_BBW_Facesitting__Facesitting_Videos_57115/'},
 	{'name': 'Anime suffectaion', 'url': 'http://www.humoron.com/porn/Kigurumi_Breathplay__Kigurumi_breathplay_Videos_51274/'},
 	{'name': 'Swimsuite', 'url': 'http://aquarhythm.kir.jp/main.htm'},
-	{'name': 'Gold', 'url': 'http://www.tube8.com/fetish/golden-fuck01/14269841/'}
+	{'name': 'Gold', 'url': 'http://www.tube8.com/fetish/golden-fuck01/14269841/'},
+	{'name': 'Amputee 2', 'url': 'https://shanachan.org/fetish/1.html'},
+	{'name': 'Vacuum beds', 'url': 'https://shanachan.org/fetish/res/75762.html'},
+	{'name': 'Clopclop', 'url': 'http://i.imgur.com/wSAbZBH.gif'},
+	{'name': 'Clopclop 2', 'url': 'http://25.media.tumblr.com/97ffb3f114f4920ddc3759b5a0fa7611/tumblr_mxbhzs50KZ1sprnvco1_500.gif'},
+	{'name': 'Clop clop 3', 'url': 'http://imgur.com/a/mFAiS'},
+	{'name': 'Hairy armpits', 'url': 'http://aisselle.tumblr.com/'},
+	{'name': 'Shampoo', 'url': 'http://www.pornhub.com/view_video.php?viewkey=316438510'},
+	{'name': 'Balloon girl vice', 'url': 'http://www.vice.com/my-life-online/grim-looner'},
+	{'name': 'Sneaker licking', 'url': 'http://www.dazeddigital.com/artsandculture/gallery/17801/0/lick-my-nikes'},
+	{'name': 'Fat fetish vice', 'url': 'http://www.vice.com/my-life-online/worlds-fattest-mom'},
+	{'name': 'Eel insertion', 'url': 'http://www.pornsocket.com/media-gallery/3600-anal-eel-insertion.html?category_id=15'}
 ];

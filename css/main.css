@@ -62,11 +62,22 @@ h1, h2, h3 {
   text-transform: uppercase; }
 
 h1 {
-  padding: 2em 0;
+  padding: 10% 0.5em;
   font-size: 72px; }
 
 h2 {
   font-size: 72px; }
+
+@media (max-width: 600px) {
+  h1 {
+    padding: 1em 0.5em;
+    font-size: 40px; }
+  h2 {
+    font-size: 40px; } }
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 30px; } }
 
 .wrapper {
   max-width: 960px;
