@@ -85,5 +85,12 @@ var fetishes = [
 	{'name': 'Balloon girl vice', 'url': 'http://www.vice.com/my-life-online/grim-looner'},
 	{'name': 'Sneaker licking', 'url': 'http://www.dazeddigital.com/artsandculture/gallery/17801/0/lick-my-nikes'},
 	{'name': 'Fat fetish vice', 'url': 'http://www.vice.com/my-life-online/worlds-fattest-mom'},
-	{'name': 'Eel insertion', 'url': 'http://www.pornsocket.com/media-gallery/3600-anal-eel-insertion.html?category_id=15'}
+	{'name': 'Eel insertion', 'url': 'http://www.pornsocket.com/media-gallery/3600-anal-eel-insertion.html?category_id=15'},
+	{'name': 'Sneeze Tweezer', 'url': 'http://youtu.be/nPU_Ga1dFGY'},
+	{'name': 'Sneeze fetish', 'url': 'http://youtu.be/ye11kmqYX9I'},
+	{'name': 'Bubblewrap footfetish', 'url': 'http://youtu.be/PekQSdB-9-c'},
+	{'name': 'Sexy bubblewrap pop', 'url': 'http://youtu.be/SJocV1U1mMQ'},
+	{'name': 'Hair combing fetish', 'url': 'http://youtu.be/VEMjcm0jS50'},
+	{'name': 'Good old dried fruit farts', 'url': 'http://youtu.be/BRpJOMf3xHs'},
+	{'name': 'Cough fetish', 'url': 'http://youtu.be/t23ozK9YPi0'}
 ];
