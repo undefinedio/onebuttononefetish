@@ -9,18 +9,22 @@ button{
 	margin: auto;
 	padding: 3em;
 	position: relative;
-	margin-top: 0;
+	top: 0;
 	@include transition(.1s);
     cursor: pointer;
 
     &:focus {
         outline: none;
     }
+
 	&.active{
-		margin-top: .5em;
+		top: .5em;
+
 		&:after{
 			bottom:0;
+            height: 0;
 		}
+
 		span{
 			bottom:-2.5em;
 		}
@@ -33,7 +37,7 @@ button{
 		width:100%;
 		left:0;
 		bottom:-.5em;
-		height: 1em;
+		height: 2em;
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
 		background: #800;
