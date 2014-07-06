@@ -1,3 +1,6 @@
+<?php
+    $hits = file_get_contents("hits.txt");
+?>
 <!doctype html>
 <html ng-app="fetishApp" lang="en">
 <head>
@@ -44,8 +47,23 @@
     <button ng-click="openFetish()" id="js-button"
             onClick="_gaq.push(['_trackEvent', 'Button', 'Clicked', 'A nasty fucker clicked the button']);">
         <h2>PRESS HERE*</h2>
+        </br>
+        <p>Already <?= $hits ?> pervs have pressed this button </p>
         <span>* If you dare, pussy!</span>
+
     </button>
+
+     <div class="social">
+            <div class="fb-share-button share-button" data-href="http://onebuttononefetish.com" data-type="button_count"></div>
+
+                <div class="g-plus"  share-button data-action="share" data-annotation="none" data-height="15"
+                     data-href="http://onebuttononefetish.com"></div>
+
+            <div class="share-button">
+                <a href="https://twitter.com/share" class="twitter-share-button " data-url="http://onebuttononefetish.com" ></a>
+            </div>
+
+    </div>
 
 </div>
 <footer><p>Have any sick suggestions? Send a message <a href="mailto:creepo@onebuttononefetish.com">here</a></p>
@@ -78,6 +96,15 @@
     _gaq.push(['_setAccount', 'UA-51941210-1']);
     _gaq.push(['_trackPageview']);
 
+    (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&appId=1431685560449528&version=v2.0"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+    /* Twitter */
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    /* G+ */
+    (function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();
+
 </script>
 </body>
 </html>
+<?php
+    file_put_contents("hits.txt", $hits + 1);
+?>

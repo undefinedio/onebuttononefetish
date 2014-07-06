@@ -3,7 +3,8 @@
 @import "helpers/_functions";
 @import "helpers/_mixins";
 @import "helpers/_helpers";
- 
+
+
 // Vendors and external stylesheets
 //@import "vendors/bootstrap";
  
@@ -22,6 +23,7 @@
 @import "components/_navigation";
 @import "components/_footer";
 @import "components/_logo";
+@import "components/_social";
 
 // Page-specific stylesheets
 @import "pages/_home";
