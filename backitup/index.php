@@ -1,4 +1,5 @@
-<?php require "./lib/JsonDB.class.php"; ?>
+<?php require "./lib/JsonDB.class.php";
+date_default_timezone_set('Europe/Brussels'); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,12 +9,6 @@
 
 </head>
 <body>
-
-<div class="jsoncontent">
-
-</div>
-
-
 <?php
 $db = new JsonDB("../json/");
 $fetishes = $db->selectAll("db");
@@ -53,14 +48,17 @@ if (isset($_POST['submit'])) {
         $rowname = $_POST['rowname'];
         $rowurl = $_POST['rowurl'];
         $db->delete("db", "name", $rowname);
-        $db->update("backup", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => true));
+        $newdbname = "backup-delete" . date("Ymd");
+        $newdb = fopen("../json/" . $newdbname . ".json", "w");
+        $db->insert($newdbname, $db->selectAll("db"));
         echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
     } else {
         $rowname = $_POST['rowname'];
         $rowurl = $_POST['rowurl'];
         $db->update("db", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => false));
-        $db->update("backup", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => false));
-
+        $newdbname = "backup-update" . date("Ymd");
+        $newdb = fopen("../json/" . $newdbname . ".json", "w");
+        $db->insert($newdbname, $db->selectAll("db"));
 
         echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
     }
@@ -70,7 +68,9 @@ if (isset($_POST['ADD'])) {
     $newrow = $_POST['newrow'];
     $newurl = $_POST['newurl'];
     $db->insert("db", array("name" => $newrow, "url" => $newurl, "down" => false));
-    $db->insert("backup", array("name" => $newrow, "url" => $newurl, "down" => false));
+    $newdbname = "backup-add-" . date("Ymd");
+    $newdb = fopen("../json/" . $newdbname . ".json", "w");
+    $db->insert($newdbname, $db->selectAll("db"));
     echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
 }
 ?>
@@ -85,11 +85,5 @@ if (isset($_POST['ADD'])) {
 
 echo displayforms($fetishes);
 ?>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--<script>var fetishes = --><?php //include ("../json/db.json");?><!--;</script>-->
-<script src="/backitup/js/backend.js"></script>
-
 </body>
 </html>
