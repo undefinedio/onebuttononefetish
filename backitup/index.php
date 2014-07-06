@@ -26,7 +26,6 @@ function displayforms($array)
         $form = $form . '<tr><td colspan="5"><form action="" method="post"><table border="1" style="border-collapse:collapse;border-color: silver;"><tr>';
         $form = $form . '<td width="" align=left>' . $index . '. <input type="hidden" name="rowname"  value="' . $row['name'] . '"/ >' . $row['name'] . '</td>';
         $form = $form . '<td width="500" align=left><input type="url" name="rowurl"  value="' . $row['url'] . '" style="width:98.5%;"/></td>';
-        $form = $form . '<td width="150" align=center>' . downornot($row['down']) . '</td>';
         $form = $form . '<td width="" align=left>delete: <input type="checkbox" name="delete" value="delete" class="delete"></td>';
         $form = $form . '<td width="" align=left><input type="submit" name="submit" value="save"></td>';
         $form = $form . '</tr></table></form></td></tr>';
