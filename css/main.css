@@ -176,8 +176,25 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   margin: auto;
-  max-width: 330px; }
+  text-align: center; }
 
 .share-button {
-  display: inline-block;
-  margin: 20px; }
+  display: inline-block !important;
+  width: auto !important;
+  margin: 10px;
+  text-align: center; }
+
+@media (max-width: 400px) {
+  .hits {
+    display: none; } }
+
+.hits-mobile {
+  text-align: center;
+  display: none; }
+  @media (max-width: 400px) {
+    .hits-mobile {
+      margin-top: 50px;
+      padding-left: 15px;
+      madding-right: 15px;
+      font-size: 12px;
+      display: block; } }
