@@ -53,11 +53,15 @@ if (isset($_POST['submit'])) {
         $rowname = $_POST['rowname'];
         $rowurl = $_POST['rowurl'];
         $db->delete("db", "name", $rowname);
+        $db->update("backup", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => true));
         echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
     } else {
         $rowname = $_POST['rowname'];
         $rowurl = $_POST['rowurl'];
         $db->update("db", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => false));
+        $db->update("backup", "name", $rowname, array("name" => $rowname, "url" => $rowurl, "down" => false));
+
+
         echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
     }
 
@@ -66,6 +70,7 @@ if (isset($_POST['ADD'])) {
     $newrow = $_POST['newrow'];
     $newurl = $_POST['newurl'];
     $db->insert("db", array("name" => $newrow, "url" => $newurl, "down" => false));
+    $db->insert("backup", array("name" => $newrow, "url" => $newurl, "down" => false));
     echo '<script>window.location.reload()</script>'; //HACK TO PERFORM REFRESH
 }
 ?>
