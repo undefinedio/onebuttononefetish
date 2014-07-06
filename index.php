@@ -48,11 +48,11 @@
             onClick="_gaq.push(['_trackEvent', 'Button', 'Clicked', 'A nasty fucker clicked the button']);">
         <h2>PRESS HERE*</h2>
         </br>
-        <p>Already <?= $hits ?> pervs have pressed this button </p>
+        <p class="hits">Already <?= $hits ?> pervs have pressed this button </p>
         <span>* If you dare, pussy!</span>
 
     </button>
-
+    <p class="hits-mobile">Already <?= $hits ?> pervs have pressed the button </p>
      <div class="social">
             <div class="fb-share-button share-button" data-href="http://onebuttononefetish.com" data-type="button_count"></div>
 

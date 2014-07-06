@@ -1,0 +1,17 @@
+.hits{
+  @media (max-width: 400px) {
+      display :none;
+  }
+}
+
+.hits-mobile{
+  text-align: center;
+  display : none;
+  @media (max-width: 400px) {
+    margin-top: 50px;
+    padding-left: 15px;
+    madding-right: 15px;
+    font-size: 12px;
+    display: block;
+  }
+}
