@@ -57,14 +57,14 @@ $hits = file_get_contents("hits.txt");
         <div class="social">
             <script> CoinWidgetCom.go({
                     /* make sure you update the wallet_address or you will not get your donations */
-                    wallet_address: "DD6E1ynfZ4VdaRj5CHB1gy2UL9AkM6cZ9w",
+                    wallet_address: "DM4BVA29eV9z8MajyATmhGXt1F7CpYZZ7D",
                     currency: "dogecoin",
                     counter: "hide",
                     alignment: "bc",
                     qrcode: true,
                     auto_show: false,
                     lbl_button: "Donate",
-                    lbl_address: "Help us do more pipi, by sponsoring our next project! ",
+                    lbl_address: "Ruin your tomorrow, sponsor our next project! ",
                     lbl_amount: "DOGECOINS" }); </script>
             <div class="fb-share-button share-button" data-href="http://onebuttononefetish.com"
                  data-type="button_count"></div>
