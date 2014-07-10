@@ -82,7 +82,6 @@ if (isset($_POST['ADD'])) {
 </form>
 
 <?php
-
 echo displayforms($fetishes);
 ?>
 </body>

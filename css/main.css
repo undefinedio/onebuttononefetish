@@ -181,8 +181,13 @@ footer {
 .share-button {
   display: inline-block !important;
   width: auto !important;
-  margin: 10px;
-  text-align: center; }
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: top; }
+
+.COINWIDGETCOM_CONTAINER > a.COINWIDGETCOM_BUTTON_DOGECOIN {
+  vertical-align: text-bottom;
+  height: 22px; }
 
 @media (max-width: 400px) {
   .hits {

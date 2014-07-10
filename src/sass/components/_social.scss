@@ -1,12 +1,20 @@
-.social{
+.social {
   padding-top: 40px;
   padding-bottom: 40px;
   margin: auto;
   text-align: center;
 }
+
 .share-button {
   display: inline-block !important;
   width: auto !important;
-  margin: 10px;
+  margin-left: 10px;
   text-align: center;
+  vertical-align: top;
+}
+
+.COINWIDGETCOM_CONTAINER > a.COINWIDGETCOM_BUTTON_DOGECOIN {
+
+  vertical-align: text-bottom;
+  height: 22px;
 }
