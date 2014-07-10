@@ -182,8 +182,8 @@ footer {
   display: inline-block !important;
   width: auto !important;
   margin-left: 10px;
-  text-align: center;
-  vertical-align: top; }
+  margin-top: 10px;
+  text-align: center; }
 
 .COINWIDGETCOM_CONTAINER > a.COINWIDGETCOM_BUTTON_DOGECOIN {
   vertical-align: text-bottom;
