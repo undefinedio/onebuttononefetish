@@ -66,7 +66,7 @@
     </div>
 
 </div>
-<footer><p>Have any sick suggestions? Send a message <a href="mailto:creepo@onebuttononefetish.com">here</a></p>
+<footer><p>Have any sick suggestions? Send a message <a href="mailto:creepo@onebuttononefetish.com">here</a><br><br>Proudly made by <a href="http://unde.fined.io">unde.fined.io</a>.</p>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
