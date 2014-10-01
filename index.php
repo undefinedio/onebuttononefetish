@@ -64,7 +64,7 @@ $hits = file_get_contents("hits.txt");
 
     <div class="follow-us">
         <p>Want suicide thoughts? Follow us on facebook and regret it later on.</p>
-        <div class="fb-like-box" data-href="https://www.facebook.com/unde.fined.io" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false" data-width="200"></div>
+        <div class="fb-like-box" data-href="https://www.facebook.com/unde.fined.io" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false" data-width="250"></div>
     </div>
 </div>
 
