@@ -81,7 +81,8 @@ h2 {
 
 .wrapper {
   max-width: 960px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 40px; }
 
 footer {
   font-size: 75%;
@@ -150,11 +151,19 @@ button {
     left: 0; }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
-  padding-bottom: 0.5em; }
+  padding-bottom: 10px; }
+
+.follow-us {
+  font-size: 12px;
+  line-height: 18px;
+  width: 90%;
+  margin: auto;
+  max-width: 420px;
+  text-align: center; }
+  .follow-us p {
+    margin-bottom: 20px; }
 
 .logo {
   display: block;

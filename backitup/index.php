@@ -1,4 +1,5 @@
 <?php require "./lib/JsonDB.class.php";
+die();
 date_default_timezone_set('Europe/Brussels'); ?>
 <!doctype html>
 <html lang="en">

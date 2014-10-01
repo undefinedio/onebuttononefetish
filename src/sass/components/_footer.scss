@@ -1,7 +1,17 @@
 footer{
-	position: fixed;
-	bottom:0;
 	width:100%;
 	text-align: center;
-	padding-bottom: .5em;
+	padding-bottom: 10px;
+}
+.follow-us{
+  font-size: 12px;
+  line-height: 18px;
+  width: 90%;
+  margin:auto;
+  max-width: 420px;
+  text-align: center;
+  p{
+    margin-bottom: 20px;
+  }
+
 }
