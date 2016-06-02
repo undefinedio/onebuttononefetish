@@ -63,9 +63,10 @@ $hits = file_get_contents("hits.txt");
     </div>
 
     <div class="follow-us">
-        <p>Want suicide thoughts? Follow us on facebook and regret it later on.</p>
-        <div class="fb-like-box" data-href="https://www.facebook.com/unde.fined.io" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false" data-width="250"></div>
-    </div>
+       <div class="undefined">
+               <p>Leuk bedacht door <a href="http://weareundefined.be" target="_blank" class="rainbow">undefined</a></p>
+           </div>
+      </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
@@ -130,6 +131,9 @@ $hits = file_get_contents("hits.txt");
 $fp = fopen("hits.txt", "r+");
 if (flock($fp, LOCK_EX)) {  // acquire an exclusive lock
     ftruncate($fp, 0);      // truncate file
+    if(intval($hits) < 1230567){
+        $hits = 1230567;
+    }
     fwrite($fp, intval($hits) + 1);
     fflush($fp);            // flush output before releasing the lock
     flock($fp, LOCK_UN);    // release the lock

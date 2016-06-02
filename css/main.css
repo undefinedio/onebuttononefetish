@@ -18,7 +18,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,7 +39,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -39,7 +52,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -62,7 +76,7 @@ h1, h2, h3 {
   text-transform: uppercase; }
 
 h1 {
-  padding: 10% 0.5em;
+  padding: 10% .5em;
   font-size: 72px; }
 
 h2 {
@@ -70,7 +84,7 @@ h2 {
 
 @media (max-width: 600px) {
   h1 {
-    padding: 1em 0.5em;
+    padding: 1em .5em;
     font-size: 40px; }
   h2 {
     font-size: 40px; } }
@@ -86,11 +100,41 @@ h2 {
 
 footer {
   font-size: 75%;
-  color: #000; }
+  color: #000000; }
   footer a {
     color: red; }
     footer a:hover {
-      color: #800; }
+      color: #880000; }
+
+.undefined {
+  margin-top: .8em;
+  font-size: 12px; }
+  .undefined .rainbow:hover {
+    animation: rainbow 1s infinite; }
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000; }
+  10% {
+    color: #ff8000; }
+  20% {
+    color: #ffff00; }
+  30% {
+    color: #80ff00; }
+  40% {
+    color: #00ff00; }
+  50% {
+    color: #00ff80; }
+  60% {
+    color: #00ffff; }
+  70% {
+    color: #0080ff; }
+  80% {
+    color: #0000ff; }
+  90% {
+    color: #8000ff; }
+  100% {
+    color: #ff0080; } }
 
 button {
   background: red;
@@ -113,7 +157,7 @@ button {
   button:focus {
     outline: none; }
   button.active {
-    top: 0.5em; }
+    top: .5em; }
     button.active:after {
       bottom: 0;
       height: 0; }
@@ -130,7 +174,7 @@ button {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -0.5em;
+    bottom: -.5em;
     height: 2em;
     -webkit-border-radius: 5px;
     border-radius: 5px;
